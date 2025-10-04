@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+
+
+    .logo_image {
+        width: 195px;
+        height: 78px;
+    }
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-72px);
+    width: 766px;
+    height: 90px;
+    background: url('../../../public/img/header_decoration.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 766px 90px;
+    z-index: -1;
+  }
+
+  

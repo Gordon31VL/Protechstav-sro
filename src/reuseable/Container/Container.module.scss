@@ -1,0 +1,17 @@
+@use "sass:list";
+
+$container-widths: 343px, 1296px;
+// $container-paddings: 12px, 16px;
+
+.container {
+  max-width: list.nth($container-widths, 1);
+  margin: 0 auto;
+//   padding: 0 list.nth($container-paddings, 1);
+
+  
+  @media (min-width: 1296px) {
+    max-width: list.nth($container-widths, 2);
+    // padding: 0 list.nth($container-paddings, 2);
+  }
+}
+
